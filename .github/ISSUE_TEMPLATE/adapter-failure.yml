@@ -1,0 +1,45 @@
+name: Chatlane stopped working on WhatsApp Web
+description: The panel or markers are missing, or Chatlane shows a failure banner.
+title: "[WhatsApp Web change] "
+labels: ["adapter-failure"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. **Do not paste message content, phone numbers or names.**
+  - type: input
+    id: extension-version
+    attributes:
+      label: Chatlane version
+      description: Shown in chrome://extensions
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: whatsapp-version
+    attributes:
+      label: WhatsApp Web version, if the banner shows it
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome
+        - Edge
+        - Brave
+        - Other Chromium
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What did you expect and what do you see?
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors
+      description: Open DevTools on the WhatsApp Web tab, filter by "chatlane", paste the errors.
+      render: text

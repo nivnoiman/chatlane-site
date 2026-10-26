@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chatlane privacy policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><span class="mark" aria-hidden="true"></span><a href="./">Chatlane</a></header>
+<main>
+<h1>Privacy policy</h1>
+<p class="muted">Last updated: 26 October 2026</p>
+<p>Chatlane is a Chrome extension that adds Statuses, Tags, Reminders and Notes to chats on WhatsApp Web. <strong>Your data never leaves your browser and your own Google sync.</strong> The developer runs no server and receives no data.</p>
+
+<h2>What Chatlane reads</h2>
+<p>On <code>web.whatsapp.com</code> only, Chatlane reads which chat is open (its identifier, its display name, and whether it is a group) and the list of chats shown, so it can attach your Status, Tags, Reminder and Note to the right chat and draw markers in the chat list. It does not read, copy or store the content of your messages.</p>
+
+<h2>What Chatlane stores</h2>
+<table>
+<tr><th>Data</th><th>Where</th></tr>
+<tr><td>Statuses, Tags, Reminders, chat identifiers and display names you tag</td><td>Chrome sync storage (<code>chrome.storage.sync</code>). Chrome syncs it across your own signed-in browsers through your Google account. The developer cannot see it.</td></tr>
+<tr><td>Notes</td><td>This browser only (IndexedDB). Notes are not synced.</td></tr>
+<tr><td>Settings and language</td><td>Chrome sync storage.</td></tr>
+</table>
+<p>If Chrome sync is off, everything stays on this device.</p>
+
+<h2>What Chatlane does not do</h2>
+<ul>
+<li>No analytics, telemetry, advertising or tracking</li>
+<li>No network requests to the developer or to any third party</li>
+<li>No selling, sharing or transferring of user data</li>
+<li>No use of data for creditworthiness or lending purposes, and no human reading of your data</li>
+</ul>
+<p>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+
+<h2>Permissions</h2>
+<table>
+<tr><th>Permission</th><th>Why</th></tr>
+<tr><td><code>storage</code>, <code>unlimitedStorage</code></td><td>Keep your Statuses, Tags, Reminders and Notes. Notes can grow beyond the default quota.</td></tr>
+<tr><td><code>alarms</code></td><td>Fire Reminders at the time you set.</td></tr>
+<tr><td><code>notifications</code></td><td>Show a notification when a Reminder is due.</td></tr>
+<tr><td>Access to <code>web.whatsapp.com</code></td><td>Show the panel and chat-list markers, and read which chat is open.</td></tr>
+</table>
+
+<h2>Your control</h2>
+<p>You can export your data to a file, import it back, or delete it: remove tags and notes in the panel, or uninstall the extension to remove local data. Data in Chrome sync can be cleared from the Chrome sync settings of your Google account.</p>
+
+<h2>Children</h2>
+<p>Chatlane is not directed at children.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version and its date will appear on this page.</p>
+
+<h2>Contact</h2>
+<p>Open an issue at <a href="https://github.com/nivnoiman/chatlane-site/issues">github.com/nivnoiman/chatlane-site/issues</a>.</p>
+</main>
+<footer>Chatlane is an independent project. It is not affiliated with, endorsed by or sponsored by WhatsApp or Meta.</footer>
+</body>
+</html>
